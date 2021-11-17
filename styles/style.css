@@ -17,7 +17,7 @@ body{
 }
 
 .wrapper{
-    margin: 10px 2rem;
+    margin: 10px 3rem;
 }
 
 header {
@@ -39,6 +39,7 @@ nav{
 
 ul{
     width: 100%;
+    padding: 0;
 
     display: flex;
     justify-content: space-evenly;
