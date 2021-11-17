@@ -1,0 +1,8 @@
+defaultBranch: 'dev'
+branches:
+  - label: feature
+    prefix: feature/
+  - label: bug
+    prefix: bugfix/
+  - label: hotfix
+    prefix: hotfix/
