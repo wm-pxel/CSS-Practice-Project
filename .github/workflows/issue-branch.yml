@@ -3,6 +3,14 @@ on:
   # you can remove it otherwise
   issues:
     types: [ assigned ]
+    defaultBranch: 'dev'
+    branches:
+      - label: feature
+        prefix: feature/
+      - label: bug
+        prefix: bugfix/
+      - label: hotfix
+        prefix: hotfix/
   # The issue_comment event below is only needed for the ChatOps mode,
   # you can remove it otherwise
   issue_comment:
@@ -19,11 +27,5 @@ jobs:
         uses: robvanderleek/create-issue-branch@main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        branches:
-          - label: feature
-            prefix: feature/
-          - label: bug
-            prefix: bugfix/
-          - label: hotfix
-            prefix: hotfix/
+        
   
