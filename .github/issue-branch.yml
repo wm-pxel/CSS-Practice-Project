@@ -3,3 +3,4 @@ branches:
     prefix: feature/
   - label: bug
     prefix: bugfix/
+defaultBranch: 'dev'
