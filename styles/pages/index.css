@@ -290,6 +290,10 @@
 	margin: 10px 0 0 0;
 	-webkit-backface-visibility: hidden;
 }
+.st-panel p.question{
+	top: 70%;
+}
+
 #st-control-1:checked ~ .st-scroll #st-panel-1 p,
 #st-control-2:checked ~ .st-scroll #st-panel-2 p,
 #st-control-3:checked ~ .st-scroll #st-panel-3 p,
