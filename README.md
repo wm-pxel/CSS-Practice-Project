@@ -36,7 +36,7 @@ A sample project for WMP CSS code
   #### Code Review Etiquitte
   The following rules need to be followed when conducting and receiving code review. Multiple violations will have users banned from further development
   1. No bullying
-  2. Clear concise comments, avoid "this is wrong" or "do this instead"
+  2. Clear concise comments, avoid "this is wrong" or "why did you do this?"
   3. Avoid programmer golf
   4. Give code examples when applicable
   5. Stick to the scope of the ticket
