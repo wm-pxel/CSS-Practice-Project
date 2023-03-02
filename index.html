@@ -6,6 +6,7 @@
         <title>CSS-Pod Home</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <link rel="stylesheet" type="text/css" href="styles/style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
   <body>
     <header>
@@ -22,6 +23,10 @@
             <li>Flexbox</li>
             <li>Grid</li>
           </ul>
+
+          <a class="toggle" href=""></a>
+          <span class="vert"></span>
+          <span class="horiz"></span>
         </div>
 
         <div class="nav-item" id="recipes">
@@ -31,6 +36,10 @@
             <li>Navigation</li>
             <li>Forms</li>
           </ul>
+
+          <a class="toggle" href=""></a>
+          <span class="vert"></span>
+          <span class="horiz"></span>
         </div>
 
         <div class="nav-item">
@@ -48,16 +57,15 @@
                 tabindex="0"
                 class="carousel__slide">
               <div class="carousel__snapper">
-                <a href="#carousel__slide4"
-                  class="carousel__prev">Go to last slide</a>
-                <a href="#carousel__slide2"
-                  class="carousel__next">Go to next slide</a>
-                
                 <article>
                   <h2>Welcome to the CSS Comptency</h2>
                   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum soluta ratione a!</p>
                 </article>
               </div>
+              <a href="#carousel__slide4"
+              class="carousel__prev">Go to last slide</a>
+              <a href="#carousel__slide2"
+              class="carousel__next">Go to next slide</a>
             </li>
             <li id="carousel__slide2"
                 tabindex="0"
@@ -79,7 +87,12 @@
             <li id="carousel__slide3"
                 tabindex="0"
                 class="carousel__slide">
-              <div class="carousel__snapper"></div>
+              <div class="carousel__snapper">
+                <article>
+                  <h2>Who we are</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum soluta ratione a!</p>
+                </article>
+              </div>
               <a href="#carousel__slide2"
                 class="carousel__prev">Go to previous slide</a>
               <a href="#carousel__slide4"
@@ -88,7 +101,12 @@
             <li id="carousel__slide4"
                 tabindex="0"
                 class="carousel__slide">
-              <div class="carousel__snapper"></div>
+              <div class="carousel__snapper">
+                <article>
+                  <h2>How to use</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum soluta ratione a!</p>
+                </article>
+              </div>
               <a href="#carousel__slide3"
                 class="carousel__prev">Go to previous slide</a>
               <a href="#carousel__slide1"
@@ -119,6 +137,8 @@
       </div>
     </main>
 
-    <footer></footer>
+    <footer>
+      <p>Copyright 2023</p>
+    </footer>
 	</body>
 </html>

@@ -1,8 +1,75 @@
 /* Accordian */
+.accordion{
+    overscroll-behavior: contain ;
+}
+
+/* Plus icon to minus icon */
+    .accordion .nav-item .toggle { 
+        display: none;
+    }
+    .accordion .nav-item:target .toggle { 
+        position: absolute;
+        top: 0;
+        right: 0;
+        
+        background: none;
+        display: block;
+        width: 40px;
+        height: 36px;
+        
+        cursor: pointer;
+        opacity: 0;
+        z-index: 20;
+    }
+
+    .accordion .nav-item span
+    {
+        align-self: flex-end;
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: absolute;
+        cursor: pointer;
+
+        background: #cdcdcd;
+        border-radius: 3px;
+
+        z-index: 2;
+        top: 14px;
+
+        transform-origin: 4px 0px;
+
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+        background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+        opacity 0.55s ease;
+    }
+    
+    .accordion .nav-item span.vert
+    {
+        right: -18px;
+        top: 0px;
+        transform: rotate(90deg);
+        transform-origin: 0% 0%;
+    }
+    
+    .accordion .nav-item:target span.horiz,
+    .accordion .nav-item a:hover ~ span.horiz,
+    .accordion .nav-item a:hover ~ span.vert
+    {
+        z-index: 15;
+    }
+
+    .accordion .nav-item:target span.vert
+    {
+        display: none;
+        animation: fadeOut 1s;
+    }
+
 /* hidden dropdown menu */
 .accordion .nav-item ul { 
     display:none; 
-    transition: 1s;
+    animation: fadeOut 1s;
 }
 
 /* When targeted, change nav link background */
@@ -10,9 +77,7 @@
     background: #33475A; 
     color: #FFF;
 }
-.accordion .nav-item:target { 
-    background: #D3F4FF;
-}
+
 
 .accordion .nav-item:target ul {
     display:flex;
@@ -43,4 +108,9 @@
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
 }
