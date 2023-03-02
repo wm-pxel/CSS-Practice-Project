@@ -5,70 +5,43 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
         <title>CSS-Pod Home</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <link rel="shortcut icon" href="../favicon.ico"> 
-		    <link href='https://fonts.googleapis.com/css?family=Josefin+Slab:400,700' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" type="text/css" href="styles/demo.css" />
         <link rel="stylesheet" type="text/css" href="styles/style.css" />
-        <link rel="stylesheet" type="text/css" href="styles/pages/index.css" />
     </head>
-    <body>
-        <div class="container">
-			<!-- Codrops top bar -->
-            <div class="codrops-top">
-                <div class="clr"></div>
-            </div><!--/ Codrops top bar -->
-			<div class="st-container">
-			
-				<input type="radio" name="radio-set" checked="checked" id="st-control-1"/>
-				<a href="#st-panel-1">Home</a>
-				<input type="radio" name="radio-set" id="st-control-2"/>
-				<a href="#st-panel-2">Who We Are</a>
-				<input type="radio" name="radio-set" id="st-control-3"/>
-				<a href="#st-panel-3">What is CSS?</a>
-				<input type="radio" name="radio-set" id="st-control-4"/>
-				<a href="#st-panel-4">Getting Started</a>
-				<input type="radio" name="radio-set" id="st-control-5"/>
-				<a href="#st-panel-5">Cookbook</a>
-				
-				<div class="st-scroll">
-				
-					<section class="st-panel" id="st-panel-1">
-						<div class="st-deco" data-icon="H"></div>
-						<h2>Welcome</h2>
-						<p>You have found yourself on the CSS Pod practice project. Take some time and click around.</p>
-					</section>
-					
-					<section class="st-panel st-color" id="st-panel-2">
-						<div class="st-deco" data-icon="2"></div>
-						<h2>Who We Are</h2>
-						<p>We are the developers that love waterfalls. No, not waterfall vs agile, but everflowing cascade of styling websites. We are graphic designs, accesibility enforcers, color theory arguers, and much, much, more.</p>
-					</section>
-					
-					<section class="st-panel" id="st-panel-3">
-						<div class="st-deco" data-icon="B"></div>
-						<h2>What is CSS?</h2>
-						<p>Cascading Style Sheets, CSS, is what gives the internet technicolor beauty. Every website, every web app uses CSS. When you hover over a button and the color changes, that is CSS at work. This pod focuses on CSS3, SCSS/Sass, and much more.</p>
-            <p class="question">Have a question? Reach out on our slack channel, css-pod-pub.</p>
-					</section>
-					
-					<section class="st-panel st-color" id="st-panel-4">
-						<div class="st-deco" data-icon="x"></div>
-						<h2>Getting Started</h2>
-						<p>Brand new to CSS? Don't you worry, we have you covered. Below you can find references to the CSS Pod's favorite beginner tutorials</p>
-					</section>
-					
-					<section class="st-panel" id="st-panel-5">
-						<div class="st-deco" data-icon="Ç"></div>
-						<h2>Cookbook</h2>
-						<p>Need some recipes for your client site? Check out the awesome pages our very own CSS Pod developers have created just for you! Find everything from a sticker footer, breadcrumb navigation, and basic hovers below.</p>
-            <p class="question">Have a request? Send us a message on our slack channel, css-pod-pub, or in the frontend channel with the hashtag, #css-pod-pub.</p>
-          </section>
-
-				</div><!-- // st-scroll -->
-				
-			</div><!-- // st-container -->
-			
+  <body>
+    <header>
+      <h1>CSS Comptency</h1>
+      <nav class="accordion">
+        <div class="nav-item">
+          <a href="index.html">Home</a>
         </div>
-	<script src="//tympanus.net/codrops/adpacks/demoad.js"></script> 
+        
+        <div class="nav-item" id="tutorials">
+          <a href="#tutorials">Getting Started</a>
+          <ul>
+            <li>CSS 101</li>
+            <li>Flexbox</li>
+            <li>Grid</li>
+          </ul>
+        </div>
+
+        <div class="nav-item" id="recipes">
+          <a href="#recipes">Recipes</a>
+          <ul>
+            <li>Tables</li>
+            <li>Navigation</li>
+            <li>Forms</li>
+          </ul>
+        </div>
+
+        <div class="nav-item">
+          <a href="#">Contact Us</a>
+        </div>
+      </nav>
+
+    </header>
+
+    <main></main>
+
+    <footer></footer>
 	</body>
 </html>

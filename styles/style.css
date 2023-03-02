@@ -1,1 +1,58 @@
 /* General Styles for All pages */
+@import "reset.css";
+@import "./only/accordion.css";
+/* Palette
+Placement Background: #D3F4FF
+Accents: #E59D23
+
+Primary: #041C2C
+Secondary: #33475A
+*/
+
+body {
+    background-color: #FFF;
+    font-size: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: stretch;
+    align-items: flex-start;
+}
+
+a {
+    text-decoration: none;
+    color: #041C2C;
+    transition: .3s;
+}
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+/* Nav */
+.nav-item {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    text-align: center;
+}
+
+.nav-item a {
+    background-color: #D3F4FF;
+    padding: 10px;
+}
+
+.nav-item:hover a {
+    background-color: #33475A;
+    cursor: pointer;
+    color: #FFF;
+}
+
+
+
+ 

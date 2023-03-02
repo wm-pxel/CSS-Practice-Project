@@ -1,0 +1,32 @@
+/* Accordian */
+/* hidden dropdown menu */
+.accordion .nav-item ul { 
+    display:none; 
+}
+
+/* When targeted, change nav link background */
+.accordion .nav-item:target a { 
+    background: #33475A; 
+    color: #FFF;
+}
+.accordion .nav-item:target { 
+    background: #D3F4FF;
+}
+
+.accordion .nav-item:target ul {
+    display:flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.accordion .nav-item:target ul li{
+    color: darkgrey;
+    font-style: italic;
+    padding: 2rem;
+}
+
+.accordion .nav-item:target ul li:has(a){
+    color: #041C2C;
+    font-style: normal;
+}
