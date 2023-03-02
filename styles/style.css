@@ -1,17 +1,23 @@
 /* General Styles for All pages */
 @import "reset.css";
-@import "./only/accordion.css";
+@import "./vanilla/accordion.css";
+@import "./vanilla/carousel.css";
+
 /* Palette
-Placement Background: #D3F4FF
 Accents: #E59D23
 
 Primary: #041C2C
 Secondary: #33475A
+Tertiary: #D3F4FF
 */
 
 body {
     background-color: #FFF;
     font-size: 15px;
+}
+
+main {
+    margin-top: 3rem;
 }
 
 nav {
@@ -32,6 +38,11 @@ h1{
     padding: 1.5rem;
 }
 
+h2{
+    font-size: 2rem;
+    padding: .5rem 0;
+}
+
 /* Nav */
 .nav-item {
     width: 100%;
@@ -40,6 +51,7 @@ h1{
     justify-content: flex-start;
     align-items: stretch;
     text-align: center;
+    position: relative;
 }
 
 .nav-item a {

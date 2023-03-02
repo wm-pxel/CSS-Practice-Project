@@ -2,6 +2,7 @@
 /* hidden dropdown menu */
 .accordion .nav-item ul { 
     display:none; 
+    transition: 1s;
 }
 
 /* When targeted, change nav link background */
@@ -18,10 +19,18 @@
     flex-flow: column;
     justify-content: flex-start;
     text-align: left;
+    background: #FFF;
+    border: #33475A solid 2px;
+
+    position: absolute;
+    z-index: 100;
+    top: 35px;
+    width: inherit;
+    animation: fadeIn 1s;
 }
 
 .accordion .nav-item:target ul li{
-    color: darkgrey;
+    color: #33475A;
     font-style: italic;
     padding: 2rem;
 }
@@ -29,4 +38,9 @@
 .accordion .nav-item:target ul li:has(a){
     color: #041C2C;
     font-style: normal;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
