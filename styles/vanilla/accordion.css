@@ -89,7 +89,7 @@
 
     position: absolute;
     z-index: 100;
-    top: 35px;
+    top: 50px;
     width: inherit;
     animation: fadeIn 1s;
 }
