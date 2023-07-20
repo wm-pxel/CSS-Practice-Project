@@ -1,6 +1,25 @@
 # css-wmp
 A sample project for WMP CSS code
 
+## Local Setup
+  The CSS practice project is a static project. This means that you do not need to have a service running locally in order to see the rendered project.
+### Github
+  You'll first want to either fork or clone a copy of the project. Forking gives you your own personal copy that will be connected to your Github account. Cloning makes a copy that is directly connected to the original project.
+
+  If you want to contribute to the project, you will need to clone a copy. This means that you have read/write access to the repo. Cloning can be done through SSH or https.
+  
+  Github has an intro tutorial if this is your first time using Github or git. [Intro Tutorial](https://docs.github.com/en/get-started/quickstart/hello-world)
+
+### Code Editing
+  You may use any code editor with this project. VS Code, Atom, SublimeText, Eclipse, etc, all work with HTML and CSS. Be sure to try out syntax highlighting. This can be downloaded in the desired code editor.
+
+  Once you have your code editor and have downloaded the repo to your local machine, you can access the code. Simply open the CSS-WMP project folder in your code editor. You should see the images, pages, and styles folders as well as the index.html and README files.
+
+### Rendering the Project
+  From your code editor or file viewer (Mac finder or Windows file explorer), right click on the index.html file. You should see an option to either open the file in your browser or copy the full file path. If you do the latter, paste the full file path into the browser of your choice (preference would be Chrome or Firefox). Hit enter in the url and the project's homepage should appear.
+
+  Congrats, you have the CSS practice project working on your local machine! Time for some fun.
+
 ## Development
 ### Branching
   To get started on developing a feature, first have a local copy of the dev branch. 
