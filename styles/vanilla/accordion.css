@@ -73,7 +73,7 @@
 }
 
 /* When targeted, change nav link background */
-.accordion .nav-item:target a { 
+.accordion .nav-item:target > a { 
     background: #33475A; 
     color: #FFF;
 }
@@ -100,10 +100,10 @@
     padding: 2rem;
 }
 
-.accordion .nav-item:target ul li:has(a){
+/* .accordion .nav-item:target ul li:has(a){
     color: #041C2C;
     font-style: normal;
-}
+} */
 
 @keyframes fadeIn {
     0% { opacity: 0; }
