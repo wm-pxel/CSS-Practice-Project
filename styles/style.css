@@ -29,7 +29,8 @@ nav {
     align-items: flex-start;
 }
 
-a {
+a, 
+.nav-item ul a {
     text-decoration: none;
     color: #041C2C;
     transition: .3s;
@@ -64,13 +65,22 @@ footer{
     background-color: #D3F4FF;
 }
 
-.nav-item a {
+.nav-item > a {
     padding: 18px;
     position: relative;
     z-index: 5;
 }
 
-.nav-item:hover a {
+.nav-item ul li{
+    transition: .2s;
+}
+
+.nav-item ul li:hover {
+    background-color: #d3f4ff;
+    cursor: pointer;
+}
+
+.nav-item:hover > a{
     background-color: #33475A;
     cursor: pointer;
     color: #FFF;
@@ -78,4 +88,7 @@ footer{
 
 
 
- 
+.recipe-idea{
+    font-weight: 600;
+    color: coral;
+}
